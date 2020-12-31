@@ -15,11 +15,12 @@ body{
     -webkit-animation-duration: 2s;
     animation-name: contentAnimation;
     animation-duration: 2s;
-    /* font-family: 'Indie Flower', cursive; */
     font-family: 'Noto Serif JP', serif;
     height: 100vh;
 } 
-
+.font{
+    font-family: 'Indie Flower', cursive;
+}
 /* loader */
  .spin{
     position: absolute;    
@@ -44,8 +45,8 @@ body{
 
 
 @keyframes contentAnimation{
-    from{right: -300px; opacity: 0;}
-    to{right: 0; opacity: 1;}
+    0%{right: -300px; opacity: 0;}
+    100%{right: 0 ; opacity:1}
 }
 
 /* loader */
@@ -63,10 +64,8 @@ body{
 
 .icon{ 
     
-    animation: magnification 5s ease-in-out infinite;
+    animation: swinging 5s ease-in-out infinite;
     display: inline-block;
-    animation: magnification 4s linear infinite;
-    display:inline-block;
     height: 15vh;
     color: #002080;
 
@@ -75,7 +74,7 @@ body{
 
 
 
-@keyframes magnification {
+@keyframes swinging {
     0%{transform: rotate(0deg); opacity: 1}
     25%{transform: rotate(90deg); opacity: .5}
     50%{transform: rotate(0deg); opacity: 1;} 
