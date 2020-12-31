@@ -15,12 +15,13 @@ body{
     -webkit-animation-duration: 2s;
     animation-name: contentAnimation;
     animation-duration: 2s;
-    font-family: 'Noto Serif JP', serif;
+
+    font-family: 'Noto Serif JP',serif;
     height: 100vh;
 } 
-.font{
+/* .font{
     font-family: 'Indie Flower', cursive;
-}
+} */
 /* loader */
  .spin{
     position: absolute;    
@@ -34,8 +35,8 @@ body{
     border-radius: 50%;
     border-top: 10px solid rgba(0, 63, 180, 0.966)  ;
     border-bottom: 10px solid rgba(27, 126, 255, 0.966)  ;
-    animation: spinner 1s  ease-in-out  infinite;
-} 
+    animation: spinner 1s  ease-in-out   infinite;
+}  
 
 
  @keyframes spinner {
@@ -64,7 +65,7 @@ body{
 
 .icon{ 
     
-    animation: swinging 5s ease-in-out infinite;
+    animation: swinging 5s ease-in-out  infinite;
     display: inline-block;
     height: 15vh;
     color: #002080;
