@@ -1,4 +1,6 @@
-/* #0063B */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+
 body{
     scroll-behavior: smooth;
     background-color: #ffffff;
@@ -16,7 +18,7 @@ button:focus{
     -webkit-animation-name: contentAnimation;
     -webkit-animation-duration: 2s;
     animation-name: contentAnimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 
     font-family: 'Noto Serif JP',serif;
     height: 100vh;
@@ -67,7 +69,7 @@ button:focus{
 
 .icon{ 
     position: absolute;
-    animation: swinging 5s ease-in-out  infinite;
+    animation: swinging 10s ease-in-out  infinite;
     display: inline-block;
     height: 15vh;
     color: #002080;
@@ -92,8 +94,8 @@ button:focus{
     color: #cc0000;
     border-color: #cc0000;
     font-weight: bold;
+    margin-top: 3px;
     border-radius: 100px;
-    padding: 5px 10px;
     background-color: transparent;
     transition: all 1s ease-in-out;
 
