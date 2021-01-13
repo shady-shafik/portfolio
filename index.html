@@ -16,9 +16,11 @@
 
 
 <body onload="myLoader()">
-
+<div class="overlay" id="overlay">
     <div class="spin" id="spin"></div>
-    <div class="content" id="content" style="display:none;">
+</div>
+
+    <div class="content " id="content" >
         <!-- navbar -->
         <nav class="navbar  navbar-light ">
             <div class="d-flex flex-row w-50 ">
@@ -32,28 +34,29 @@
                     <li class="my-color"><i class="fab fa-blogger-b"></i></li>
                 </ul>             
             </div> 
-
-            
-
         </nav>
 
-        <div class="container h-100 mt-5 pb-5">
-            <div class="row justify-content-center align-items-center h-75 ">
-                <div class="col-md-6 text-center">
-                    <h1 class="myGreeting">Hi, I'm Shady.</h1>
-                    <p class="myTitle  ml-5">I design and build websites.</p>      
-                    
-                    <div class="icon  pt-5">
-                        <i class="fas fa-truck-monster fa-2x"></i>
+        <div class="container h-75 mt-5 pt-5 ">              
+                <div class="row justify-content-center align-items-center h-75 ">
+                    <div class="col-md-6 text-center" >
+                    <h1 class="myGreeting text-focus-in" >Hi, I'm Shady.</h1>
+                    <p class="myTitle  ml-5  text-focus-in">I design and build websites.</p>      
+                        <div class="icon  pt-5">
+                            <i class="fas fa-truck-monster fa-2x"></i>
+                        </div>
                     </div>
-                </div>
-            </div>        
-        </div>
+                </div>        
+            </div>  
+    </div>  
+    
         <!-- my skills -->
-        <div class="container justify-content-center  mb-5 w-75" >
-            <h4 class="my-color"> skills </h4>
+        <div class="container justify-content-center  mt-5 w-75 py-5" >
+            <div id="typed-strings">
+                <h4 class="my-color"> Skills </h4>
+            </div>
+            <h4 class="my-color" style="height: 27px;"><span id="typed"></span></h4>
             <div class="row " id="skills">
-                <div class="col-md-4 mt-5 pl-5 " > <i style="color: #EFD81D;"  class="fab mr-3 fa-2x fa-js"></i>JavaScript</div>
+                <div class="col-md-4 mt-5 pl-5 "> <i style="color: #EFD81D;"  class="fab mr-3 fa-2x fa-js"></i>JavaScript</div>
                 <div class="col-md-4 mt-5 pl-5 " > <i style="color: #61DBFB ;" class="fab mr-3 fa-2x fa-react"></i>React</div>
                 <div class="col-md-4 mt-5 pl-5 " > <i style="color: #7377AD ;" class="fab mr-3 fa-2x fa-php"></i>PHP</div>
                 <div class="col-md-4 mt-5 pl-5 " > <i style="color: #F72C1F ;" class="fab mr-3 fa-2x fa-laravel"></i>Laravel</div>        
@@ -68,20 +71,28 @@
         <!-- my skills -->
 
         <!-- projects  -->
-        <div class="container  mt-5 py-5">
-            <h4 class="my-color mt-5"> projects samples </h4>
-            <div class="row justify-content-center text-center">
+        <div class="container  mt-5 py-5 w-75">
+           <div id="projects-strings"><h4 class="my-color mt-5"> Projects  </h4></div> 
+           <h4 class="my-color" style="height: 27px;"><span id="projects"></span></h4>
+
+            <div class="row justify-content-center text-center pt-5" >
+
                 <div class="col-md-6">
-                    <a class="d-block mt-3" href="https://eloquent-jepsen-72340e.netlify.app/" target="_blank" rel="noopener noreferrer">  Tech store - React App</a>
-                    <a class="d-block mt-3" href="https://shady-shafik.github.io/North-way/"   target="_blank"  rel="noopener noreferrer"> North Way - Business websites </a>
+                    <a  href="https://eloquent-jepsen-72340e.netlify.app/" target="_blank" rel="noopener noreferrer"> <img src="imgs/tech-App.png" class="w-100 " alt="img"></a>
+                    <a class="d-block my-5" href="https://eloquent-jepsen-72340e.netlify.app/" target="_blank" rel="noopener noreferrer"> <img src="imgs/tech-App2.png" class="w-100 " alt="img"></a>
                </div>
+
+                <div class="col-md-6">
+                    <a  href="https://shady-shafik.github.io/North-way/"   target="_blank"  rel="noopener noreferrer"> <img src="imgs/North-Way2.png" class="w-100 d-block northWay" alt="img"></a>
+               </div>
+
             </div>
         </div>
         <!-- projects  -->
-    </div>
 
-
+    <script src="typed.min.js"></script>
     <script src="index.js"></script>
+
 </body>
 
 </html>
