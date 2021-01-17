@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imgs/icon.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/imgs/icon.png">
+    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         <!-- navbar -->
         <nav class="navbar  navbar-light ">
             <div class="d-flex flex-row w-50 ">
-                <div class="navbar-brand "><a  href="#"><img class="w-75 align-top" src="imgs/myLogo.png" alt="logo"></a></div>
+                <div class="navbar-brand "><a  href="/index.html"><img class="w-75 align-top" src="/imgs/myLogo.png" alt="logo"></a></div>
             </div>   
             <div class="d-flex flex-row-reverse">
                 <ul class="contact-icons">
@@ -36,10 +36,36 @@
             </div> 
         </nav>
 
-  
+        <div class="container h-75 mt-3 ">
+            <div class=" row justify-content-center" >
+                <div class="col-md-8 col-lg-6" >
+                    <h4 class="my-color my-3 font-weight-bold">Contact Me</h4>
+                    <p class="">If I can be of assistance, please do not hesitate to contact me.</p>
+                    <form action="">
 
-    <script src="typed.min.js"></script>
-    <script src="index.js"></script>
+                        <div class="from-group">
+                            <label for="name">Name</label>
+                            <input class="form-control" type="text" name="name">
+                        </div>
+
+                        <div class=" from-group mt-3">
+                            <label for="name">Email</label>
+                            <input class="form-control" type="email" name="email">
+                        </div>
+
+                        <div class="from-group my-3">
+                            <label for="message">Message</label>
+                           <textarea class="form-control" name="message"  rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-control">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/typed.min.js"></script>
+    <script src="/index.js"></script>
 
 </body>
 
