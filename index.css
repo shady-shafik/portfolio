@@ -35,7 +35,7 @@ button:focus{
     animation-name: contentAnimation;
     animation-duration: 1s;
     font-family: 'Noto Serif JP',serif;
-    height: 100vh;
+    height: 89vh;
 } 
 
 .contact-icons{
@@ -49,9 +49,7 @@ button:focus{
     display: inline;
     margin-right:5px ;
 }
-/* .font{
-    font-family: 'Indie Flower', cursive;
-} */
+
 /* loader */
 .overlay{
     position: fixed;
@@ -200,9 +198,3 @@ animation: grow 2s  infinite ;
     }
   }
   
-
-  /* .contact-image{
-      background-image: url(/imgs/contact.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-  } */
