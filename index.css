@@ -41,8 +41,9 @@ button:focus{
 .contact-icons{
     position: fixed;
     right:  5%;
-    top: 3%;
+    top: 3.5%;
     opacity: .8;
+    z-index: 1000;
 }
 .contact-icons > li {
     display: inline;
@@ -73,7 +74,7 @@ button:focus{
     border-radius: 50%;
     border-top: 10px solid rgba(0, 63, 180, 0.966)  ;
     border-bottom: 10px solid rgba(27, 126, 255, 0.966)  ;
-    animation: spinner 1s  ease-in-out   infinite;
+    animation: spinner 1s  linear  infinite;
 }  
 
 
@@ -129,19 +130,19 @@ button:focus{
 /* call to action button class */
 .cta{
     
-    color: #cc0000;
-    border-color: #cc0000;
-    font-weight: bold;
+    color: #cc0000 !important;
+    border-color: #cc0000 !important;
+    font-weight: bold !important;
     margin-top: 3px;
-    border-radius: 100px;
+    border-radius: 100px !important;
     background-color: transparent;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out !important;
 
 }
 
 .cta:hover{
-    background-color: #cc0000;
-    color: #ffffff;
+    background-color: #cc0000 !important;
+    color: #ffffff !important;
 }
 
 /* skills animation */
@@ -170,8 +171,8 @@ animation: grow 2s  infinite ;
 
 
 .text-focus-in {
-	-webkit-animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
-	        animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 
+	-webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
+	        animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 
 }
 
  @-webkit-keyframes text-focus-in {
@@ -199,3 +200,9 @@ animation: grow 2s  infinite ;
     }
   }
   
+
+  /* .contact-image{
+      background-image: url(/imgs/contact.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+  } */

@@ -1,6 +1,6 @@
 function myLoader(){
 
-    setTimeout(showPage , 3000)
+    setTimeout(showPage , 1000)
 }
 
 

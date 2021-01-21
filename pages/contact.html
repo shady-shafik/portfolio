@@ -20,7 +20,7 @@
     <div class="spin" id="spin"></div>
 </div>
 
-    <div class="content " id="content" >
+    <div class="content text-focus-in" id="content" >
         <!-- navbar -->
         <nav class="navbar  navbar-light ">
             <div class="d-flex flex-row w-50 ">
@@ -36,33 +36,38 @@
             </div> 
         </nav>
 
-        <div class="container h-75 mt-3 ">
-            <div class=" row justify-content-center" >
-                <div class="col-md-8 col-lg-6" >
+        <div class="container">
+            <div class=" row justify-content-center " >
+                <div class="col-md-6 contact-image"><img class="w-100" src="/imgs/contact.png" alt="contact-img"></div>
+                <div class="col-md-6 mt-3">
                     <h4 class="my-color my-3 font-weight-bold">Contact Me</h4>
-                    <p class="">If I can be of assistance, please do not hesitate to contact me.</p>
-                    <form action="">
+                    <p class="text-dark">If I can be of assistance, please do not hesitate to contact me.</p>
 
-                        <div class="from-group">
-                            <label for="name">Name</label>
-                            <input class="form-control" type="text" name="name">
+                    <div class="row mt-5">
+
+                        <div class="col-4">
+                            <a href="https://m.me/shady.mobaraq">
+                                <i class="fab fa-facebook-messenger fa-4x" style="color:#00B2FF"></i>
+                             </a>                  
+                        </div>            
+    
+                        <div class="col-4">
+                            <a href="https://api.whatsapp.com/send?phone=+201206508527">
+                                <i class="fab fa-whatsapp fa-4x" style="color: #128C7E;"></i>
+                            </a>
                         </div>
-
-                        <div class=" from-group mt-3">
-                            <label for="name">Email</label>
-                            <input class="form-control" type="email" name="email">
+    
+                        <div class="col-4">
+                            <a href="mailto:shadyshfk@gmail.com">
+                              <i class="far fa-envelope fa-4x" style="color: #DB4437;"></i>
+                            </a>            
                         </div>
-
-                        <div class="from-group my-3">
-                            <label for="message">Message</label>
-                           <textarea class="form-control" name="message"  rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary form-control">Submit</button>
-
-                    </form>
+                  
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
     <script src="/typed.min.js"></script>
     <script src="/index.js"></script>
