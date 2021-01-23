@@ -13,16 +13,14 @@ ul{
 i{
     cursor: pointer;
 }
-a{
-    color: #cc0000 !important;
-    font-weight: bold;
-}
-a:link {
+a, a:link, a:visited  {
     text-decoration: none !important;
+    color: #0033cc !important;
+    font-weight: bold;
     cursor:pointer
 }  
 .my-color{
-    color: #002080;
+    color: #002080 !important;
 }
 button:focus{
     outline: 0 !important;
@@ -41,13 +39,14 @@ button:focus{
 .contact-icons{
     position: fixed;
     right:  5%;
-    top: 3.5%;
+    top: 2.5%;
     opacity: .8;
     z-index: 1000;
 }
 .contact-icons > li {
-    display: inline;
-    margin-right:5px ;
+    display: inline-block;
+    padding: 4px;
+    margin-right: 5px;
 }
 
 /* loader */
@@ -57,7 +56,6 @@ button:focus{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff;
     z-index: 10000;
 }
  .spin{
@@ -70,8 +68,8 @@ button:focus{
     margin: -76px 0 0 -76px;    
     border: 10px solid #f3f3f3f3;
     border-radius: 50%;
-    border-top: 10px solid rgba(0, 63, 180, 0.966)  ;
-    border-bottom: 10px solid rgba(27, 126, 255, 0.966)  ;
+    border-top: 10px solid #002080  ;
+    border-bottom: 10px solid #0033cc ;
     animation: spinner 1s  linear  infinite;
 }  
 
@@ -89,12 +87,6 @@ button:focus{
 
 /* loader */
 
-
-.landing{
-    background-image: url('imgs/wave.svg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
 .myGreeting{
     color: #0000C6;
 }
@@ -110,7 +102,6 @@ button:focus{
     display: inline-block;
     height: 15vh;
     color: #002080;
-
 }
 
 
@@ -127,15 +118,15 @@ button:focus{
 
 /* call to action button class */
 .cta{
-    
+    width: 120px;
+    padding: 7px ;
     color: #cc0000 !important;
     border-color: #cc0000 !important;
     font-weight: bold !important;
     margin-top: 3px;
     border-radius: 100px !important;
     background-color: transparent;
-    transition: all 1s ease-in-out !important;
-
+    transition: all .5s ease-in-out !important;
 }
 
 .cta:hover{
@@ -143,6 +134,21 @@ button:focus{
     color: #ffffff !important;
 }
 
+.myBtn{
+    width: 120px;
+    padding: 7px ;
+    color: #002080 !important;
+    border-color: #002080 !important;
+    font-weight: bold !important;
+    margin-top: 3px;
+    border-radius: 100px !important;
+    background-color: transparent;
+    transition: all .5s ease-in-out !important;
+}
+.myBtn:hover{
+    background-color: #002080 !important;
+    color: #ffffff !important;
+}
 /* skills animation */
 
 .skill{
@@ -159,7 +165,6 @@ animation: grow 2s  infinite ;
 
 .shadow{
     box-shadow: 2px 2px 1px rgba(34, 34, 34, 0.75);
-
 }
 
 
@@ -197,4 +202,19 @@ animation: grow 2s  infinite ;
       opacity: 1;
     }
   }
-  
+
+  .links{
+    animation: opacity 2s  infinite;
+    transition: ease-in-out;
+    /* background-image: linear-gradient(#2193b0 , #6dd5ed); */
+    
+  }
+
+
+  @keyframes opacity {
+      0%{ opacity: 1;}
+      50%{ opacity: .8;}
+      75%{ opacity: .8;}
+      100%{ opacity: 1;}
+  }
+

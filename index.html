@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imgs/icon.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" media="all">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
@@ -17,29 +17,36 @@
     <div class="overlay" id="overlay">
         <div class="spin" id="spin"></div>
     </div>
-    <nav class="navbar  navbar-light ">
-        <div class="d-flex flex-row w-50 ">
-            <div class="navbar-brand "><a  href="../index.html"><img class="w-75 align-top" src="imgs/myLogo.png" alt="logo"></a></div>
-        </div>   
-            <ul class=" contact-icons ">
-                <li class="my-color"><i class="fab fa-facebook-f"></i></li>
-                <li class="my-color"><i class="fab fa-github"></i></li>
-                <li class="my-color"><i class="fab fa-linkedin"></i></li>
-                <li class="my-color"><i class="fab fa-blogger-b"></i></li>
-            </ul>             
-    </nav>
+            <nav class="navbar  navbar-light ">
+                <div class="d-flex flex-row w-50 ">
+                    <div class="navbar-brand "><a  href="../index.html"><img class="w-75 align-top" src="../imgs/myLogo.png" alt="logo"></a></div>
+                </div>   
+                    <ul class=" contact-icons ">
+                        <li class="my-color"><i class="fab fa-facebook-f"></i></li>
+                        <li class="my-color"><i class="fab fa-github"></i></li>
+                        <li class="my-color"><i class="fab fa-linkedin"></i></li>
+                        <li class="my-color"><i class="fab fa-blogger-b"></i></li>
+                    </ul>             
+            </nav>
+
     <div class="content " id="content" >
         <div class="container h-100  text-focus-in">              
-            <div class="row justify-content-center align-items-center h-75 ">
+            <div class="row justify-content-center align-items-center h-100 ">
                 <div class="col-md-6 text-center" >
-                <h1 class="myGreeting " >Hi, I'm Shady.</h1>
-                <p class="myTitle  ml-5 ">I design and build websites.</p>      
-                    <div class="icon  pt-5">
-                        <i class="fas fa-truck-monster fa-2x"></i>
+                    <div class="mb-5">
+                        <h1 class="myGreeting " >Hi, I'm Shady.</h1>
+                        <p class="myTitle  ml-5 ">I design and build websites.</p>                  
+                    </div>
+ 
+                    <div class="text-center ">
+                        <a href="pages/about.html"> <button  class="myBtn mr-5"><i class="fas fa-arrow-left pr-3"></i>About</button></a> 
+                        <a href="pages/contact.html"> <button class="cta">Hire me<i class="fas fa-arrow-right pl-3"></i> </button></a>
                     </div>
                 </div>
-            </div>        
-        </div>  
+            </div>  
+        </div>
+    </div>  
+
     </div>  
     <script src="index.js"></script>
 </body>
