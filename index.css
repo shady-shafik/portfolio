@@ -65,26 +65,6 @@ button:focus{
 }
 
 
-.icon{ 
-    position: absolute;
-    animation: moving 10s ease-in-out  infinite;
-    display: inline-block;
-    height: 15vh;
-    color: #002080;
-}
-
-
-
-
-@keyframes moving {
-    0%{left: 20%;}
-    25%{left: 50%;}
-    50%{left: 75%;}
-    75%{left: 50%;}
-    100%{left:20%}
-
-}
-
 /* call to action button class */
 .cta{
     width: 115px;
