@@ -28,7 +28,7 @@ button:focus{
 .content{
     position: relative;
     -webkit-animation-name: contentAnimation;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     animation-name: contentAnimation;
     animation-duration: 1s;
     font-family: 'Noto Serif JP',serif;
@@ -46,36 +46,6 @@ button:focus{
     display: inline-block;
     padding: 4px;
     margin-right: 5px;
-}
-
-/* loader */
-.overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10000;
-}
- .spin{
-    position: absolute;    
-    left: 52%;
-    top: 50%; 
-    width: 120px;
-    height: 120px;
-    z-index: 1;
-    margin: -76px 0 0 -76px;    
-    border: 10px solid #f3f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #002080  ;
-    border-bottom: 10px solid #0033cc ;
-    animation: spinner 1s  linear  infinite;
-}  
-
-
- @keyframes spinner {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
 }
 
 
