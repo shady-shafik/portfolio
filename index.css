@@ -3,9 +3,10 @@
 
 body{
     scroll-behavior: smooth;
-    background-image: url("imgs/bg.svg");
+    background-image: url("imgs/background.svg") ;
     background-attachment: fixed;
     background-size:contain;
+
 }
 ul{
     list-style: none;
